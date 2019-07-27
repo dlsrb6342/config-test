@@ -1,0 +1,7 @@
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      failureRateThreshold: 80
+      waitDurationInOpenState: 2s
+      ringBufferSizeInClosedState: 1000
+      ringBufferSizeInHalfOpenState: 10
