@@ -5,3 +5,23 @@ resilience4j.circuitbreaker:
       waitDurationInOpenState: 2s
       ringBufferSizeInClosedState: 1000
       ringBufferSizeInHalfOpenState: 10
+
+resilience4j.retry:
+  configs:
+    default:
+      maxRetryAttempts: 10
+      waitDuration: 10s
+      enableExponentialBackoff: true
+      exponentialBackoffMultiplier: 2
+
+resilience4j.bulkhead:
+  configs:
+    default:
+      maxConcurrentCall: 10
+
+resilience4j.ratelimiter:
+  configs:
+    default:
+      limitForPeriod: 10
+      limitRefreshPeriod: 1s
+      timeoutDuration: 0
