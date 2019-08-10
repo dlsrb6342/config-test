@@ -19,6 +19,11 @@ resilience4j.bulkhead:
     default:
       maxConcurrentCalls: 99
 
+resilience4j.thread-pool-bulkhead:
+  configs:
+    default:
+      maxThreadPoolSize: 99
+
 resilience4j.ratelimiter:
   configs:
     default:
