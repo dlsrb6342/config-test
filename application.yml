@@ -1,7 +1,7 @@
 resilience4j.circuitbreaker:
   configs:
     default:
-      failureRateThreshold: 99
+      failureRateThreshold: 66
       waitDurationInOpenState: 2s
       ringBufferSizeInClosedState: 1000
       ringBufferSizeInHalfOpenState: 10
@@ -9,7 +9,7 @@ resilience4j.circuitbreaker:
 resilience4j.retry:
   configs:
     default:
-      maxRetryAttempts: 99
+      maxRetryAttempts: 66
       waitDuration: 10s
       enableExponentialBackoff: true
       exponentialBackoffMultiplier: 2
@@ -17,16 +17,16 @@ resilience4j.retry:
 resilience4j.bulkhead:
   configs:
     default:
-      maxConcurrentCalls: 99
+      maxConcurrentCalls: 66
 
 resilience4j.thread-pool-bulkhead:
   configs:
     default:
-      maxThreadPoolSize: 99
+      maxThreadPoolSize: 66
 
 resilience4j.ratelimiter:
   configs:
     default:
-      limitForPeriod: 99
+      limitForPeriod: 66
       limitRefreshPeriod: 1s
       timeoutDuration: 0
