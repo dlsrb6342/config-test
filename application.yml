@@ -1,3 +1,9 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 resilience4j.circuitbreaker:
   configs:
     default:
