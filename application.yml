@@ -43,3 +43,4 @@ resilience4j.ratelimiter:
   instances:
     test:
       base-config: default
+      register-health-indicator: true
