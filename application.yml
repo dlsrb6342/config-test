@@ -7,7 +7,7 @@ management:
 resilience4j.circuitbreaker:
   configs:
     default:
-      failure-rate-threshold: 33
+      failure-rate-threshold: 99
   instances:
     test:
       base-config: default
