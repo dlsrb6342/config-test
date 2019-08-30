@@ -7,7 +7,7 @@ management:
 resilience4j.circuitbreaker:
   configs:
     default:
-      failure-rate-threshold: 99
+      failure-rate-threshold: 11
   instances:
     test:
       base-config: default
@@ -15,7 +15,7 @@ resilience4j.circuitbreaker:
 resilience4j.retry:
   configs:
     default:
-      max-retry-attempts: 99
+      max-retry-attempts: 11
   instances:
     test:
       base-config: default
@@ -23,7 +23,7 @@ resilience4j.retry:
 resilience4j.bulkhead:
   configs:
     default:
-      max-concurrent-calls: 99
+      max-concurrent-calls: 11
   instances:
     test:
       base-config: default
@@ -31,7 +31,7 @@ resilience4j.bulkhead:
 resilience4j.thread-pool-bulkhead:
   configs:
     default:
-      max-thread-pool-size: 99
+      max-thread-pool-size: 11
   instances:
     test:
       base-config: default
@@ -39,7 +39,7 @@ resilience4j.thread-pool-bulkhead:
 resilience4j.ratelimiter:
   configs:
     default:
-      limit-for-period: 99
+      limit-for-period: 11
   instances:
     test:
       base-config: default
